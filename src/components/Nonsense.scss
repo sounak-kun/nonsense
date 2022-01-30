@@ -1,6 +1,7 @@
 @use "sass" as *;
 
 .nonsense {
+  max-width: 90vw;
   padding: 2em;
   border-radius: 1em;
 
@@ -14,6 +15,11 @@
     background-clip: text;
 
     @include font-permanent-marker(4.5rem, 400);
+
+    @media (max-width: 576px) {
+      @include font-permanent-marker(4rem, 400);
+    }
+
     text-align: center;
     color: transparent;
     line-height: 1em;
