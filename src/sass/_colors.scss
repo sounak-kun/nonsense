@@ -1,0 +1,13 @@
+@use "sass:color";
+
+$clr-primary-100: #f8f9fa;
+$clr-primary-300: #dee2e6;
+$clr-primary-400: #ced4da;
+$clr-primary-700: #343a40;
+$clr-primary-900: #212529;
+
+$clr-blue-100: #9bf6ff;
+$clr-blue-700: color.scale($clr-blue-100, $lightness: -60%);
+
+$clr-red-100: #ffadad;
+$clr-red-700: color.scale($clr-red-100, $lightness: -60%);

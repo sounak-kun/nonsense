@@ -1,0 +1,21 @@
+@use "sass" as *;
+
+.nonsense {
+  padding: 2em;
+  border-radius: 1em;
+
+  background: $clr-primary-100;
+  @include mix-card-shadow;
+
+  &__heading {
+    margin: 0 0 0.25em 0;
+
+    background: $grad-primary fixed;
+    background-clip: text;
+
+    @include font-permanent-marker(4.5rem, 400);
+    text-align: center;
+    color: transparent;
+    line-height: 1em;
+  }
+}

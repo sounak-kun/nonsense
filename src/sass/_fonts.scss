@@ -1,0 +1,24 @@
+@mixin _font($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin font-nunito($size: 1rem, $weight: 400) {
+  font-family: "Nunito", sans-serif;
+  @include _font($size, $weight);
+}
+
+@mixin font-source-code-pro($size: 1rem, $weight: 400) {
+  font-family: "Source Code Pro", monospace;
+  @include _font($size, $weight);
+}
+
+@mixin font-permanent-marker($size: 1rem, $weight: 400) {
+  font-family: "Permanent Marker", cursive;
+  @include _font($size, $weight);
+}
+
+@mixin font-rubik($size: 1rem, $weight: 400) {
+  font-family: "Rubik", sans-serif;
+  @include _font($size, $weight);
+}
