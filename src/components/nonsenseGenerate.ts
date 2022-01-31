@@ -164,7 +164,6 @@ const nonsenseGenerate = (last: string, loop = false) => {
   } // prevents recursion
 
   while (generated.includes(next) || dictionary.dict.includes(next)) {
-    console.log(next, generated.includes(next), dictionary.dict.includes(next));
     next = nonsenseGenerate(last, true);
   }
 
