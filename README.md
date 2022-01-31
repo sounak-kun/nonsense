@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Nonsense word generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7252a86d-4e38-4c9b-bb2c-ff4483d1e452/deploy-status)](https://app.netlify.com/sites/nonsense-words/deploys)
 
-## Available Scripts
+## **Overview**
 
-In the project directory, you can run:
+<hr>
 
-### `yarn start`
+Generates a nonsense word according to the following rules.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+1. Each word must be in C-V-C (consonant vowel consonant) format.
+2. Words must be written in capital letters.
+3. Consonant Q, W, X, Y, Z cannot be used.
+4. Consonant H cannot be placed at the end of a word.
+5. The first and last letter of a word cannot be the same.
+6. Every letter of the current word must be different from the letters of the last word.
+7. Letter pair B-V, C-K, G-J cannot appear together. This applies to rule 5 & 6 as well.
+8. Every letter of the current word cannot be consecutive to the letters of the last word.
+9. Once a vowel is used, the next two vowels cannot be used in the next letter.
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br>
 
-### `yarn test`
+## **Preview**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<hr>
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![Preview](docs/preview.png)](https://nonsense.sounak.dev)
