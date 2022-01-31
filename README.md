@@ -2,9 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7252a86d-4e38-4c9b-bb2c-ff4483d1e452/deploy-status)](https://app.netlify.com/sites/nonsense-words/deploys)
 
-## **Overview**
+<br>
 
-<hr>
+## Overview
 
 Generates a nonsense word according to the following rules.
 
@@ -22,8 +22,6 @@ Generates a nonsense word according to the following rules.
 
 <br>
 
-## **Preview**
-
-<hr>
+## Preview
 
 [![Preview](docs/preview.png)](https://nonsense.sounak.dev)
