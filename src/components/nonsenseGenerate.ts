@@ -1,3 +1,5 @@
+import dictionary from "data/dict.json";
+
 const vowels = ["A", "E", "I", "O", "U"];
 const consonants = [
   "B",
@@ -158,11 +160,11 @@ const nonsenseGenerate = (last: string, loop = false) => {
 
   // Output
   if (loop) {
-    console.log(last);
     return next;
   } // prevents recursion
 
-  while (generated.includes(next)) {
+  while (generated.includes(next) || dictionary.dict.includes(next)) {
+    console.log(next, generated.includes(next), dictionary.dict.includes(next));
     next = nonsenseGenerate(last, true);
   }
 
