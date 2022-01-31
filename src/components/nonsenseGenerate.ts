@@ -84,7 +84,7 @@ const nonsenseGenerate = (last: string, loop = false) => {
 
   if (vowels.includes(last[1])) {
     popchar(
-      first,
+      second,
       vowels[vowels.indexOf(last[1])], // (rule 8)
       vowels[(vowels.indexOf(last[1]) + 1) % vowels.length], // (rule 10)
       vowels[(vowels.indexOf(last[1]) + 2) % vowels.length] // (rule 10 abstraction)
