@@ -66,7 +66,17 @@
       @include font-rubik(1.5rem, 700);
       letter-spacing: 0.125ch;
 
-      transition: background-color 150ms ease, color 150ms ease-out;
+      cursor: pointer;
+      transition: background-color 100ms ease-out, color 200ms ease-out,
+        outline-width 200ms ease;
+
+      &:focus {
+        outline: 0.125em solid $clr-primary-100;
+      }
+
+      &:hover {
+        color: $clr-primary-100;
+      }
     }
   }
 
@@ -78,10 +88,8 @@
       outline-color: $clr-blue-100;
       color: $clr-blue-100;
 
-      &:hover,
       &:active {
         background: $clr-blue-700;
-        color: $clr-primary-100;
       }
     }
 
@@ -98,10 +106,8 @@
       outline-color: $clr-red-100;
       color: $clr-red-100;
 
-      &:hover,
       &:active {
         background: $clr-red-700;
-        color: $clr-primary-100;
       }
     }
 
