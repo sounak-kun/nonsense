@@ -6,8 +6,10 @@ $clr-primary-400: #ced4da;
 $clr-primary-700: #343a40;
 $clr-primary-900: #212529;
 
-$clr-blue-100: #9bf6ff;
-$clr-blue-700: color.scale($clr-blue-100, $lightness: -60%);
+$clr-blue-400: #4361ee;
+$clr-blue-100: color.adjust($clr-blue-400, $lightness: 30%);
+$clr-blue-700: color.adjust($clr-blue-400, $lightness: -30%);
 
-$clr-red-100: #ffadad;
-$clr-red-700: color.scale($clr-red-100, $lightness: -60%);
+$clr-red-400: #c9184a;
+$clr-red-100: color.adjust($clr-red-400, $lightness: 40%);
+$clr-red-700: color.adjust($clr-red-400, $lightness: -20%);

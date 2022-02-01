@@ -7,5 +7,6 @@
 
   min-height: 100vh;
 
-  background: $grad-primary fixed;
+  background: no-repeat center / cover url("images/background.jpg"),
+    $grad-primary fixed;
 }

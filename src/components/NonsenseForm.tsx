@@ -52,6 +52,7 @@ const NonsenseForm = () => {
           minLength={3}
           maxLength={3}
           disabled={lastDisabled}
+          autoComplete="off"
           value={lastValue}
           onChange={lastChangeHandler}
         />

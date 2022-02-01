@@ -16,10 +16,10 @@
       padding: 0.5em 1em;
       border-radius: 1em 1em 0 0;
 
-      background: $clr-primary-400;
+      background: rgba($clr-primary-900, 0.75);
 
       @include font-nunito(1rem, 700);
-      color: $clr-primary-900;
+      color: $clr-primary-100;
     }
 
     &-text {
@@ -29,12 +29,17 @@
       border-radius: 0 0.5em 0.5em 0.5em;
       outline: none;
 
-      background: $clr-primary-300;
+      background: rgba($clr-primary-900, 0.625);
 
       @include font-source-code-pro(2rem, 700);
       text-align: center;
       text-transform: uppercase;
-      color: $clr-primary-900;
+      color: $clr-primary-100;
+
+      &::placeholder {
+        color: $clr-primary-100;
+        opacity: 0.5;
+      }
     }
   }
 
@@ -58,11 +63,10 @@
       border: none;
       border-radius: 0.5em;
 
-      background: $clr-primary-400;
-
       @include font-rubik(1.5rem, 700);
-      color: $clr-primary-900;
       letter-spacing: 0.125ch;
+
+      transition: background-color 150ms ease, color 150ms ease-out;
     }
   }
 
@@ -70,9 +74,15 @@
     grid-column: span 2;
 
     &-button {
-      background: $clr-blue-100;
-      outline-color: $clr-blue-700;
-      color: $clr-blue-700;
+      background: $clr-blue-400;
+      outline-color: $clr-blue-100;
+      color: $clr-blue-100;
+
+      &:hover,
+      &:active {
+        background: $clr-blue-700;
+        color: $clr-primary-100;
+      }
     }
 
     &--update {
@@ -84,9 +94,15 @@
     display: none;
 
     &-button {
-      background: $clr-red-100;
-      outline-color: $clr-red-700;
-      color: $clr-red-700;
+      background: $clr-red-400;
+      outline-color: $clr-red-100;
+      color: $clr-red-100;
+
+      &:hover,
+      &:active {
+        background: $clr-red-700;
+        color: $clr-primary-100;
+      }
     }
 
     &--update {
